@@ -1,0 +1,2 @@
+2018-07-17T20:05:03+00:00 ERR (3): Warning: PDO::__construct(): MySQL server has gone away  in C:\OSPanel\domains\mysite.local\lib\Zend\Db\Adapter\Pdo\Abstract.php on line 129
+2018-07-17T20:05:03+00:00 ERR (3): Warning: PDO::__construct(): Error while reading greeting packet. PID=5568  in C:\OSPanel\domains\mysite.local\lib\Zend\Db\Adapter\Pdo\Abstract.php on line 129
