@@ -1,8 +1,8 @@
 <?php
 class MyCompany_TechTalk_Block_View extends Mage_Core_Block_Template
 {
-    protected function _toHtml()
+    public function getRequestedRecord()
     {
-        return "Hello World";
+        return Mage::getModel('techtalk/contact')->load(1);
     }
 }

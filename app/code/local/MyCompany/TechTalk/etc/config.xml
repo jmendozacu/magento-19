@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <MyCompany_TechTalk> <!--try delete-->
+        <MyCompany_TechTalk>
             <version>0.1.0</version>
         </MyCompany_TechTalk>
     </modules>
@@ -11,7 +11,7 @@
                 <use>standard</use>
                 <args>
                     <module>MyCompany_TechTalk</module>
-                    <frontName>magetalk</frontName>
+                    <frontName>techtalk</frontName>
                 </args>
             </techtalk>
         </routers>
@@ -28,11 +28,21 @@
             <techtalk>
                 <class>MyCompany_TechTalk_Block</class>
             </techtalk>
+			
         </blocks>
         <models>
             <techtalk>
-                <class>MyCompany_TechTalk_Models</class>
+                <class>MyCompany_TechTalk_Model</class>
+				<resourceModel>techtalk_resource</resourceModel>
             </techtalk>
+			<techtalk_resource>
+				<class>MyCompany_TechTalk_Model_Resource</class>
+				<entities>
+					<contact>
+						<table>ain_contact</table>
+					</contact>
+				</entities>
+			</techtalk_resource>
         </models>
     </global>
 </config>

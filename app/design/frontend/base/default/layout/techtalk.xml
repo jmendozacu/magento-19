@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
-<layout> 
+
+<layout>
     <techtalk_index_index>
         <reference name="content">
-            <block type="techtalk/view" name="techtalk"/>
+            <block type="techtalk/view" name="techtalk" template="mycompany/contact/view.phtml" />
         </reference>
     </techtalk_index_index>
 </layout>
