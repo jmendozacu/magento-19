@@ -4,7 +4,12 @@
  */
 ?>
 
-<ul>
-	<li><?= $this->getRequestedRecord()->getName() ?> said:</li>
-	<li><?= $this->getRequestedRecord()->getComment() ?></li>
+<ul><li><?
+            $collect = $this->getCommentsCollection();
+            foreach($collect as $item) {
+                echo $item->getName() . " said:" . "<br>";
+                echo $item->getComment() . "<br>". "<br>";
+                echo "OTHER COMMENTS:" . "<br>";
+             }
+             ?></li>
 </ul>
