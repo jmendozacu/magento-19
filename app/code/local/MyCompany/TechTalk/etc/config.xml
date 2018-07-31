@@ -11,7 +11,7 @@
                 <use>standard</use>
                 <args>
                     <module>MyCompany_TechTalk</module>
-                    <frontName>techtalk</frontName>
+                    <frontName>magetalk</frontName>
                 </args>
             </techtalk>
         </routers>
@@ -28,8 +28,12 @@
             <techtalk>
                 <class>MyCompany_TechTalk_Block</class>
             </techtalk>
-			
         </blocks>
+        <helpers>
+                <lesson>
+                    <class>MyCompany_TechTalk_Block</class>
+                </lesson>
+        </helpers>
         <models>
             <techtalk>
                 <class>MyCompany_TechTalk_Model</class>
@@ -41,8 +45,27 @@
 					<contact>
 						<table>ain_contact</table>
 					</contact>
+                    <comments>
+                        <table>comment</table>
+                    </comments>
 				</entities>
 			</techtalk_resource>
         </models>
+        <helpers>
+            <techtalk>
+                <class>MyCompany_TechTalk_Helper</class>
+            </techtalk>
+        </helpers>
     </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <my_techtalk before="Mage_Adminhtml">MyCompany_TechTalk_Adminhtml</my_techtalk>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
